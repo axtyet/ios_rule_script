@@ -8,7 +8,7 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: tgymnich/fork-sync@v1.8
+      - uses: actions/checkout@v4.1.0
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           owner: blackmatrix7 # fork 的上游仓库 user
